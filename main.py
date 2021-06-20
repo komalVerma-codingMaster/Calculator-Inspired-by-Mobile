@@ -31,7 +31,7 @@ borderWidth = 0.5
 root = Tk()
 root.title("Calculator (Inspired by Mobile)")
 root.config(background=white)
-root.iconbitmap("C:/Users/Sunil Kumar/3D Objects/Coding Files/Software/Python/Calculator (Inspired by Mobile)/Media/icon.ico")
+# root.iconbitmap("C:/Users/Sunil Kumar/3D Objects/Coding Files/Software/Python/Calculator (Inspired by Mobile)/Media/icon.ico")
 root.geometry("{}x{}".format(rootWidth, rootHeight))
 root.minsize(rootWidth, rootHeight)
 root.maxsize(rootWidth, rootHeight)
@@ -42,8 +42,8 @@ def changements_1(event):
 
 # Main Content :-
 # Importing Images :-
-backspaceImg = PhotoImage(file="C:/Users/Sunil Kumar/3D Objects/Coding Files/Software/Python/Calculator (Inspired by Mobile)/Media/backspace.png")
-mainBgImg = PhotoImage(file="C:/Users/Sunil Kumar/3D Objects/Coding Files/Software/Python/Calculator (Inspired by Mobile)/Media/mainBg.png")
+backspaceImg = PhotoImage("backspace.png")
+mainBgImg = PhotoImage("mainBg.png")
 
 # Main Background :-
 mainBg = Label(root, image=mainBgImg, borderwidth=0, background=white)
